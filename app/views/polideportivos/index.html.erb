@@ -1,0 +1,31 @@
+<div class="container">
+  <h1 class="center-title">LISTA DE POLIDEPORTIVOS</h1>
+  <!-- Botón para añadir un nuevo Polideportivo -->
+  <div class="button-container">
+    <%= link_to "Nuevo Polideportivo", new_polideportivo_path, class: "button" %>
+  </div>
+
+  <!-- Contenedor para las tarjetas -->
+  <div class="card-container">
+    <% @polideportivos.each do |polideportivo| %>
+      <div class="card">
+        <!-- Imagen del polideportivo -->
+        <% if polideportivo.imagen.attached? %>
+          <%= image_tag polideportivo.imagen, class: "card-image", alt: "Imagen de #{polideportivo.nombre}" %>
+        <% else %>
+          <p class="card-image-placeholder">No hay imagen disponible</p>
+        <% end %>
+
+        <!-- Contenido de la tarjeta -->
+        <div class="card-content">
+          <h2 class="card-title"><%= polideportivo.nombre %></h2>
+
+          <!-- Botón para ver el listado de canchas -->
+          <div class="button-container">
+            <%= link_to "Ver listado de canchas", polideportivo_canchas_path(polideportivo), class: "button button-primary" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

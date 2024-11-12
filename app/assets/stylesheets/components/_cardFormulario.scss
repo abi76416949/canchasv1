@@ -1,0 +1,61 @@
+
+// Estilo para una tarjeta centrada en la página
+.centered-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px; // Altura mínima para centrar verticalmente
+  }
+  
+  .centered-card {
+    max-width: 800px; // Ancho máximo de la tarjeta
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.496);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .centered-card .card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .centered-card .card-content {
+    padding: 20px;
+  }
+  
+  .centered-card .card-title {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .centered-card .card-category {
+    color: #777;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .centered-card .button-container {
+    margin-top: 20px;
+  }
+  
+  .centered-card .button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .centered-card .button:hover {
+    background-color: #0056b3;
+  }

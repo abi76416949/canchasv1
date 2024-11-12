@@ -1,0 +1,81 @@
+.center-title {
+    text-align: center;
+    font-size: 2rem; // Puedes ajustar el tamaño según lo necesites
+    margin-top: 20px; // Opcional: añade espaciado superior
+    margin-bottom: 20px; // Opcional: añade espaciado inferior
+  }
+  
+  // Estilo para títulos principales (h1)
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  // Estilo para subtítulos (h2)
+  .subtitle {
+    font-size: 2em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  // Estilo para títulos centrados
+  .title-centered {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  // Estilo para párrafos
+  .paragraph {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  // Estilo para textos pequeños
+  .small-text {
+    font-size: 0.875em;
+    color: #888;
+  }
+  
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; // Centra el formulario verticalmente
+    padding: 20px;
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .field {
+    margin-bottom: 1.5cm; // Espacio entre campos del formulario
+    width: 100%;
+    max-width: 400px; // Limita el ancho del campo para mejor apariencia
+  }
+  
+  .field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .field input,
+  .field textarea,
+  .field select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }

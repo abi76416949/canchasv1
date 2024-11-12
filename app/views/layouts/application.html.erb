@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+  </head>
+
+  <body>
+    <!-- Encabezado -->
+    <header class="header">
+      <div class="container">
+        <h1 class="header-title">Gu Peloter FU!</h1>
+        <nav class="nav">
+          <%= link_to "Inicio", root_path, class: "button" %>
+
+          <%= link_to "Polideportivos", polideportivos_path, class: "button" %>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <%= yield %>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <%= Time.current.year %> Mi Aplicación. Todos los derechos reservados.</p>
+        <nav class="footer-nav">
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

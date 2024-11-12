@@ -1,0 +1,25 @@
+<%= form_with(model: @polideportivo, local: true) do |form| %>
+    <div class="field">
+        <%= form.label :nombre, "Nombre" %>
+        <%= form.text_field :nombre %>
+    </div>
+
+    <div class="field">
+        <%= form.label :contacto, "Contacto" %>
+        <%= form.text_field :contacto %>
+    </div>
+
+    <div class="field">
+        <%= form.label :ubicacion, "Ubicación" %>
+        <%= form.text_field :ubicacion %>
+    </div>
+
+    <div class="field">
+        <%= form.label :ubicacion_api, "API de Ubicación" %>
+        <%= form.text_area :ubicacion_api, placeholder: "Inserta tu API de Google Maps aquí" %>
+    </div>
+
+    <div class="actions">
+        <%= form.submit "Actualizar", class: "btn btn-primary" %>
+    </div>
+<% end %>

@@ -1,0 +1,46 @@
+<div class="centered-card-container">
+<div class="centered-card">
+  <%= form_with(model: @polideportivo, local: true, html: { multipart: true }) do |form| %>
+    <h1>Nuevo Polideportivo</h1>
+
+    <div class="field">
+      <%= form.label :nombre %>
+      <%= form.text_field :nombre, required: true %>
+    </div>
+
+    <div class="field">
+      <%= form.label :ubicacion %>
+      <%= form.text_field :ubicacion %>
+    </div>
+
+    <div class="field">
+      <%= form.label :categoria %>
+      <%= form.text_field :categoria %>
+    </div>
+
+    <div class="field">
+      <%= form.label :descripcion %>
+      <%= form.text_area :descripcion %>
+    </div>
+
+    <div class="field">
+      <%= form.label :contacto %>
+      <%= form.text_field :contacto %>
+    </div>
+
+    <div class="field">
+      <%= form.label :ubicacion_api, "Ubicación API" %>
+      <%= form.text_field :ubicacion_api %>
+    </div>
+
+    <div class="field">
+      <%= form.label :imagen %>
+      <%= form.file_field :imagen %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit "Crear Polideportivo"%>
+    </div>
+  <% end %>
+  </div>
+</div>

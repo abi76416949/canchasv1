@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  polideportivo: one
+  nombre: MyString
+  descripcion: MyText
+  precio_dia: 1.5
+  precio_noche: 1.5
+  tipo: MyString
+
+two:
+  polideportivo: two
+  nombre: MyString
+  descripcion: MyText
+  precio_dia: 1.5
+  precio_noche: 1.5
+  tipo: MyString

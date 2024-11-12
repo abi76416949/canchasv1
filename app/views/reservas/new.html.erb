@@ -1,0 +1,54 @@
+<div class="body">
+
+  <%= form_with(model: @reserva, url: polideportivo_cancha_reservas_path(@polideportivo, @cancha), local: true) do |form| %>
+    <div class="centered-card-container">
+      <div class="centered-card">
+          <h1 class="center-title">Crear Nueva Reserva</h1>
+          <!-- Información del Cliente -->
+          <h2 class="section-title">Información del Cliente</h2>
+
+          <%= form.fields_for :cliente do |cliente_form| %>
+            <div class="field">
+              <%= cliente_form.label :nombre, class: "field-label" %>
+              <%= cliente_form.text_field :nombre, class: "field-input" %>
+            </div>
+
+            <div class="field">
+              <%= cliente_form.label :telefono, class: "field-label" %>
+              <%= cliente_form.text_field :telefono, class: "field-input" %>
+            </div>
+
+            <div class="field">
+              <%= cliente_form.label :email, class: "field-label" %>
+              <%= cliente_form.email_field :email, class: "field-input" %>
+            </div>
+          <% end %>
+
+          <!-- Información de la Reserva -->
+          <h2 class="section-title">Información de la Reserva</h2>
+
+          <div class="field">
+            <%= form.label :fecha, class: "field-label" %>
+            <%= form.date_field :fecha, class: "field-input" %>
+          </div>
+
+          <div class="field">
+            <%= form.label :hora_inicio, class: "field-label" %>
+            <%= form.time_field :hora_inicio, class: "field-input" %>
+          </div>
+
+          <div class="field">
+            <%= form.label :hora_fin, class: "field-label" %>
+            <%= form.time_field :hora_fin, class: "field-input" %>
+          </div>
+
+          <!-- Botón de envío -->
+          <div class="actions">
+            <%= form.submit "Crear Reserva y Cliente", class: "button button-primary" %>
+          </div>
+        </div>
+    </div>
+
+    <% end %>
+
+</div>

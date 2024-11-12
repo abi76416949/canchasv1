@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cliente: one
+  cancha: one
+  fecha: 2024-11-08
+  hora_inicio: 2024-11-08 03:40:32
+  hora_fin: 2024-11-08 03:40:32
+
+two:
+  cliente: two
+  cancha: two
+  fecha: 2024-11-08
+  hora_inicio: 2024-11-08 03:40:32
+  hora_fin: 2024-11-08 03:40:32
